@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Java</title>
+</head>
+<body id="cuerpo">
+    
+    <div class="buscar">
+        <form style="text-align: center;" class="search" id="buscar" >
+            <input id="buscador" type="text" style="padding: 10px 5px; width: 50%;" name="name" placeholder="Buscar un pukimon">
+        </form>
+    </div>
+    
+<div style="text-align: center;" class="busqueda-completada">
+    <div id="itemEncontrado">
+
+    </div>
+</div>
+
+   
+    <div class="pokemons">
+        <div>
+            <div id="primerPokemon" class="primerPokemon seccionPokemon" style="text-align: center; color: #12223d; width: 80%; margin: 0 auto;">
+                <h2 style="padding: 20px 0; box-shadow: 1px 1px 1px 1px #DADADA;">Habilidades de Ditto</h2>
+                <img class="cargando" src="Assets/imagenes/cargando-loading-048.gif">
+                <div class="seccionClick" style="display: flex; justify-content: space-evenly;" id="habilidades1">
+                    
+                </div>
+            </div>
+        </div>
+            
+            <div id="segundoPokemon" class="segundoPokemon seccionPokemon" style="text-align: center; color: #12223d; width: 80%; margin: 0 auto;">
+                <h2 style="padding: 20px 0; box-shadow: 1px 1px 1px 1px #DADADA;">Habilidades de Espeon</h2>
+                <img class="cargando" src="Assets/imagenes/cargando-loading-048.gif">
+                <div class="seccionClick" style="display: flex; justify-content: space-evenly;" id="habilidades2">
+
+                </div>
+            </div>
+
+            <div id="tercerPokemon" class="tercerPokemon seccionPokemon" style="text-align: center; color: #12223d; width: 80%; margin: 0 auto;">
+                <h2 style="padding: 20px 0; box-shadow: 1px 1px 1px 1px #DADADA;">Habilidades de Litwick</h2>
+                <img class="cargando" src="Assets/imagenes/cargando-loading-048.gif">
+                <div class="seccionClick" style="display: flex; justify-content: space-evenly;" id="habilidades3">
+                    
+                </div>
+            </div>
+            <div id="cuartoPokemon" class="cuartoPokemon seccionPokemon" style="text-align: center; color: #12223d; width: 80%; margin: 0 auto;">
+                <h2 style="padding: 20px 0; box-shadow: 1px 1px 1px 1px #DADADA;">Habilidades de Dragonair</h2>
+                <img class="cargando" src="Assets/imagenes/cargando-loading-048.gif">
+                <div class="seccionClick" style="display: flex; justify-content: space-evenly;" id="habilidades4">
+                    
+                </div>
+            </div>
+            <div id="quintoPokemon" class="quintoPokemon seccionPokemon" style="text-align: center; color: #12223d; width: 80%; margin: 0 auto;">
+                <h2 style="padding: 20px 0; box-shadow: 1px 1px 1px 1px #DADADA;">Habilidades de Charizard</h2>
+                <img class="cargando" src="Assets/imagenes/cargando-loading-048.gif">
+                <div class="seccionClick" style="display: flex; justify-content: space-evenly;" id="habilidades5">
+                    
+                </div>
+            </div>
+
+            <div id="sextoPokemon" class="sextoPokemon seccionPokemon" style="text-align: center; color: #12223d; width: 80%; margin: 0 auto;">
+                <h2 style="padding: 20px 0; box-shadow: 1px 1px 1px 1px #DADADA;">Habilidades de Lampent</h2>
+                <img class="cargando" src="Assets/imagenes/cargando-loading-048.gif">
+                <div class="seccionClick" style="display: flex; justify-content: space-evenly;" id="habilidades6">
+                    
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+        <div style="text-align: center; padding-top: 20px; ">
+            <a style="text-decoration: none; color: black;" href="usuariosAzar/usuariosAzar.html">Click aquí para ver usuarios al azar :0</a>
+        </div>
+
+<div id="overlay" class="overlay">
+    </div>
+
+    <div id="Ditto" class="descripcion">
+        <div class="nombrePokemon">
+            <h2 class="nombre-pokemon">Ditto</h2>
+        </div>
+        <div class="imagenPokemon">
+            <img style="max-width: 50%;" src="Assets/imagenes/Ditto.png">
+        </div>
+        <div class="descripcionPokemon">
+            <p class="parrafo">El término ditto se utiliza para referirse a algo que se ha mencionado anteriormente o más arriba, ya sea de forma oral o escrita, para así reafirmar lo dicho, pero evitando la repetición de alguna declaración a la que, con esa expresión, se hace referencia. Significa "lo dicho" en el idioma Toscano.</p>
+        </div>
+        <form>           
+            <input class="btn" id="ocultarModal" type="button" value="Cerrar">
+        </form>
+    </div>
+
+    <div id="Espeon" class="descripcion">
+        <div class="nombrePokemon">
+            <h2 class="nombre-pokemon">Espeon</h2>
+        </div>
+        <div class="imagenPokemon">
+            <img style="max-width: 50%; max-height: 50%;" src="Assets/imagenes/Espeon.png">
+        </div>
+        <div class="descripcionPokemon">
+            <p class="parrafo">196 Espeon es un Pokémon de tipo psíquico introducido en la segunda generación. Es una de las ocho posibles evoluciones de Eevee.</p>
+        </div>
+        <form>           
+            <input class="btn" id="ocultarModal2" type="button" value="Cerrar">
+        </form>
+    </div>
+
+    <div id="Litwick" class="descripcion">
+        <div class="nombrePokemon">
+            <h2 class="nombre-pokemon">Litwick</h2>
+        </div>
+        <div class="imagenPokemon">
+            <img style="max-width: 50%;" src="Assets/imagenes/Litwick.png">
+        </div>
+        <div class="descripcionPokemon">
+            <p class="parrafo">607 Litwick es un Pokémon de tipo fantasma/fuego introducido en la quinta generación, La luz que desprende absorbe la energía vital de humanos y Pokémon.</p>
+        </div>
+        <form>           
+            <input class="btn" id="ocultarModal3" type="button" value="Cerrar">
+        </form>
+    </div>
+
+    <div id="Dragonair" class="descripcion">
+        <div class="nombrePokemon">
+            <h2 class="nombre-pokemon">Dragonair</h2>
+        </div>
+        <div class="imagenPokemon">
+            <img style="max-width: 50%;" src="Assets/imagenes/Dragonair.png">
+        </div>
+        <div class="descripcionPokemon">
+            <p class="parrafo">148 Dragonair es un Pokémon de tipo dragón introducido en la primera generación. Es la evolución de Dratini.</p>
+        </div>
+        <form>           
+            <input class="btn" id="ocultarModal4" type="button" value="Cerrar">
+        </form>
+    </div>
+
+    <div id="Charizard" class="descripcion">
+        <div class="nombrePokemon">
+            <h2 class="nombre-pokemon">Charizard</h2>
+        </div>
+        <div class="imagenPokemon">
+            <img style="max-width: 50%;" src="Assets/imagenes/Charizard.png">
+        </div>
+        <div class="descripcionPokemon">
+            <p class="parrafo">006 Charizard es un Pokémon de tipo fuego/volador, introducido en la primera generación. Es la evolución de Charmeleon.</p>
+        </div>
+        <form>           
+            <input class="btn" id="ocultarModal5" type="button" value="Cerrar">
+        </form>
+    </div>
+
+    <div id="Lampent" class="descripcion">
+        <div class="nombrePokemon">
+            <h2 class="nombre-pokemon">Lampent</h2>
+        </div>
+        <div class="imagenPokemon">
+            <img style="max-width: 50%;" src="Assets/imagenes/Lampent.png">
+        </div>
+        <div class="descripcionPokemon">
+            <p class="parrafo">608 Lampent es un Pokémon de tipo fantasma/fuego introducido en la quinta generación. Es la evolución de Litwick.</p>
+        </div>
+        <form>           
+            <input class="btn" id="ocultarModal6" type="button" value="Cerrar">
+        </form>
+    </div>
+
+        
+        <script src="jquery-3.3.1.js"> </script>
+        <script src="main.js"> </script>
+</body>
+</html>

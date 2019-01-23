@@ -1,0 +1,8 @@
+.seccionPokemon:hover {
+    background: #EBEBEB;
+    
+}
+.seccionPokemon:active {
+    background: rgb(123, 230, 123);
+
+}

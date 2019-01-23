@@ -1,0 +1,30 @@
+{
+    "habilidadesEspañol": [
+        {
+            "habildiad": {
+                "nombre": "Infiltrador"
+            },
+            "is_hidden": true
+        },
+        {
+            "habilidad": {
+                "nombre": "Cuerpo en llamas"
+            },
+            "is_hidden": false
+        },
+        {
+            "habilidad": {
+                "nombre": "Ataque de fuego"
+            },
+            "is_hidden": false
+        }
+    ],
+    "experienciaBasica": 184,
+    "detalles": [
+        {
+            "nombre": "Lampent"
+        }
+    ],
+    "id": 196,
+    "imagenDePokemon": "../imagenes/Lampent.png"
+}
