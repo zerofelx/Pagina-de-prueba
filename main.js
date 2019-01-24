@@ -159,7 +159,7 @@ var pokeLampent = {
 
 // Imagen de pokeball
 
-    const pokeImagen = 'https://github.com/zerofelx/PruebaAgustinFernandez/blob/master/Assets/imagenes/pokeball.png';
+    const pokeImagen = 'Assets/imagenes/pokeball.png';
 
 
 // Seccion donde van las habilidades y la imagen
