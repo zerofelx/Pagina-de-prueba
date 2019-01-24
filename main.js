@@ -266,7 +266,7 @@ function setAttributes($element, atributos) {
     // const data = new FormData($buscador)
     // const busqueda = console.log(data.get('name'))
     // const HTMLString = detallePokemon(JSON.parse(busqueda))
-    const HTMLString = detallePokemon(pokeEspeon)
+    const HTMLString = detallePokemon(pokeLitwick)
     $espacio.innerHTML = HTMLString
     
   })
