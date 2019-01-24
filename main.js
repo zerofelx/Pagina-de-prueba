@@ -103,7 +103,7 @@ var pokeDitto = {
   nombre: 'Ditto',
   pasiva: 'Impostor',
   habilidad1: 'Agilidad',
-  imagen: 'assets/imagenes/ditto.png',
+  imagen: 'Assets/imagenes/Ditto.png',
   descripcion: 'El término ditto se utiliza para referirse a algo que se ha mencionado anteriormente o más arriba, ya sea de forma oral o escrita, para así reafirmar lo dicho, pero evitando la repetición de alguna declaración a la que, con esa expresión, se hace referencia. Significa "lo dicho" en el idioma Toscano.  ',
   numeroDeModal: 'ocultarModal'
 }
@@ -111,7 +111,7 @@ var pokeEspeon = {
   nombre: 'Espeon',
   pasiva: 'Sincronizar',
   habilidad1: 'Magic Bounce',
-  imagen: 'assets/imagenes/espeon.png',
+  imagen: 'Assets/imagenes/Espeon.png',
   descripcion: '196 Espeon es un Pokémon de tipo psíquico introducido en la segunda generación. Es una de las ocho posibles evoluciones de Eevee.',
   numeroDeModal: 'ocultarModal2'
 }
@@ -120,7 +120,7 @@ var pokeLitwick = {
   pasiva: 'Cuerpo de llamas',
   habilidad1: 'Infiltrado',
   habilidad2: 'Incendio repentino',
-  imagen: 'assets/imagenes/litwick.png',
+  imagen: 'Assets/imagenes/Litwick.png',
   descripcion: '607 Litwick es un Pokémon de tipo fantasma/fuego introducido en la quinta generación, La luz que desprende absorbe la energía vital de humanos y Pokémon.',
   numeroDeModal: 'ocultarModal3'
 }
@@ -128,7 +128,7 @@ var pokeDragonair = {
   nombre: 'Dragonair',
   pasiva: 'Mudar de piel',
   habilidad1: 'Marvel Scale',
-  imagen: 'assets/imagenes/dragonair.png',
+  imagen: 'Assets/imagenes/Dragonair.png',
   descripcion: '148 Dragonair es un Pokémon de tipo dragón introducido en la primera generación. Es la evolución de Dratini.',
   numeroDeModal: 'ocultarModal4'
 }
@@ -136,7 +136,7 @@ var pokeCharizard = {
   nombre: 'Charizard',
   pasiva: 'Energia Solar',
   habilidad1: 'Resplandor',
-  imagen: 'assets/imagenes/charizard.png',
+  imagen: 'Assets/imagenes/Charizard.png',
   descripcion: '006 Charizard es un Pokémon de tipo fuego/volador, introducido en la primera generación. Es la evolución de Charmeleon.',
   numeroDeModal: 'ocultarModal5'
 }
@@ -146,7 +146,7 @@ var pokeLampent = {
   pasiva: 'Cuerpo de fuego',
   habilidad1: 'infiltrator',
   habilidad2: 'Flash Fire',
-  imagen: 'assets/imagenes/lampent.png',
+  imagen: 'Assets/imagenes/Lampent.png',
   descripcion: '608 Lampent es un Pokémon de tipo fantasma/fuego introducido en la quinta generación. Es la evolución de Litwick.'
 ,
   numeroDeModal: 'ocultarModal6'
