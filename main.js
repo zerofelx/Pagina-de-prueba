@@ -153,7 +153,7 @@ var pokeLampent = {
 }
 
 
-
+var pokemonsArray = [pokeDitto, pokeEspeon, pokeLitwick,]
 
 
 
