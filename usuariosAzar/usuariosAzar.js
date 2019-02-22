@@ -22,7 +22,8 @@ fetch('https://randomuser.me/api/')
         document.write('<h3 style="text-align: center;">Segundo nombre: ', user.results[0].name.last, '</h3><br>')
         document.write('<h3 style="text-align: center;">Genero: ', user.results[0].gender, '</h3><br>')
         document.write('<h3 style="text-align: center;">Zona horaria: ', user.results[0].location.timezone.description, '</h3><br>')
-        document.write('<div style="text-align: center"> <a style="text-decoration: none; color: black;" href="../asd.html">Click aquí para volver :0</a> </div>')
+        document.write('<div style="text-align: center"> <a style="text-decoration: none; color: black;" href="../index.html">Click aquí para volver :0</a> </div>')
+        document.write('<h1>LAURA TE AMO!! :0'</h1>)
         
     })
     .catch(()=> {
