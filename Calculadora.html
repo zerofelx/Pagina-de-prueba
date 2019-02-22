@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+
+    <script>
+        function insertar(numero) {
+            const visualizar = document.getElementById('visualizador')
+            visualizar.value = visualizar.value + numero
+        }
+
+        function resultado() {
+            var valor = document.getElementById('visualizador')
+            valor.value =  eval(valor.value)
+        }
+
+        function borrar() {
+            const C = document.getElementById('visualizador')
+
+            C.value = ''
+        }
+    </script>
+
+    <style>
+        * {
+            padding: 0; margin: 0
+        }
+        #visualizador {
+            width: 400px;
+            margin: 8px 2px 2px 2px;
+            font-size: 50px;
+        }
+        #bloqueTexto{
+            text-align: center
+        }
+        #botones {
+            margin: 0 auto
+        }
+        .botones {
+            width: 80px;
+            height: 80px;
+            font-size: 40px;
+            padding: 0;
+            margin: 2px
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="bloqueTexto">
+        <form>
+            <input id="visualizador" type="text">
+        </form>
+    </div>
+
+    <table id="botones">
+        <tr>
+            <td><input class="botones" type="button" value="C" onclick="borrar()"></td>
+            <td><input class="botones" type="button" value="--" onclick="insertar('--')"></td>
+            <td><input class="botones" type="button" value="/" onclick="insertar('/')"></td>
+            <td><input class="botones" type="button" value="X" onclick="insertar('*')"></td>
+        </tr>
+        <tr>
+            <td><input class="botones" type="button" value="7" onclick="insertar(7)"></td>
+            <td><input class="botones" type="button" value="8" onclick="insertar(8)"></td>
+            <td><input class="botones" type="button" value="9" onclick="insertar(9)"></td>
+            <td><input class="botones" type="button" value="-" onclick="insertar('-')"></td>
+        </tr>
+        <tr>
+            <td><input class="botones" type="button" value="4" onclick="insertar(4)"></td>
+            <td><input class="botones" type="button" value="5" onclick="insertar(5)"></td>
+            <td><input class="botones" type="button" value="6" onclick="insertar(6)"></td>
+            <td><input class="botones" type="button" value="+" onclick="insertar('+')"></td>
+        </tr>
+        <tr>
+            <td><input class="botones" type="button" value="1" onclick="insertar(1)"></td>
+            <td><input class="botones" type="button" value="2" onclick="insertar(2)"></td>
+            <td><input class="botones" type="button" value="3" onclick="insertar(3)"></td>
+            <td><input class="botones" type="button" value="=" onclick="resultado()"></td>
+        </tr>
+        <tr>
+            <td><input class="botones" type="button" value="0" onclick="insertar(0)"></td>
+            <td><input class="botones" type="button" value="." onclick="resultado()"></td>
+            <td><input class="botones" type="button" value="(" onclick="insertar('(')"></td>
+            <td><input class="botones" type="button" value=")" onclick="insertar(')')"></td>
+        </tr>
+    </table>
+
+
+
+
+
+</body>
+</html>
