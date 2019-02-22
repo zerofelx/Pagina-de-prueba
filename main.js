@@ -1,104 +1,3 @@
-
-// const pruebaDePromesa = new Promise(function(todoBien, todoMal) {
-//     setTimeout(function() {
-//         todoBien("La promesa funciona");
-//     }, 3000)
-    
-// })
-
-// const pruebaDePromesa2 = new Promise(function(todoBien, todoMal) {
-//     setTimeout(function() {
-//         todoBien("La segunda promesa funciona primero");
-//     }, 5000)
-    
-// })
-
-//pruebaDePromesa
-//    .then(function() {
-//        document.write("Funciona")
-//    })
-//    .catch(function() {
-//        document.write("xd")
-//    })
-
-// Promise.race([
-//     pruebaDePromesa,
-//     pruebaDePromesa2,
-// ])
-// .then(function(mensaje) {
-//     document.write(mensaje)
-// })
-// .catch(function() {
-//     document.write("Todo mal")
-// })
-
-
-// $.ajax('https://randomuser.me/api/', {
-//     method: 'GET',
-//     success: function(data) {
-//         console.log(data)
-//     },
-//     error: function() {
-//         console.log("xd")
-//     }
-// })
-
-// fetch('https://randomuser.me/api/')
-//     .then(function (response) {
-//         return response.json()
-//     })
-//     .then(function(user) {
-//         document.write('user: <br>')
-//         document.write('Primer nombre: ', user.results[0].name.first, '<br>')
-//         document.write('Segundo nombre: ', user.results[0].name.last, '<br>')
-//         document.write('State: ', user.results[0].location.state, '<br>')
-//     })
-//     .catch(()=> {
-//         document.write('kappa')
-//     });
-
-
-
-
-
-
-
-
-
-
-
-(async function load() {
-
-
-
-    async function getData (url) {
-     const response = await fetch(url)
-     const data = await response.json()
-     return data;
-    }
-    
-    const ditto = await getData('https://pokeapi.co/api/v2/pokemon/ditto/')
-    const litwick = await getData('https://pokeapi.co/api/v2/pokemon/litwick/')
-    const espeon = await getData('https://pokeapi.co/api/v2/pokemon/espeon/')
-    const dragonair = await getData('https://pokeapi.co/api/v2/pokemon/dragonair/')
-    const charizard = await getData('https://pokeapi.co/api/v2/pokemon/charizard/')
-    const lampent = await getData('https://pokeapi.co/api/v2/pokemon/lampent/')
-
-
-
-// animación
-
-function animacion(idAnimar) {
-
-const animarSeccion = document.getElementById(idAnimar)
-
-animarSeccion.classList.add('fadeIn')
-
-}
-
-
-// Información de pokemons
-
 var pokeDitto = {
   nombre: 'Ditto',
   pasiva: 'Impostor',
@@ -153,7 +52,71 @@ var pokeLampent = {
 }
 
 
-var pokemonsArray = [pokeDitto, pokeEspeon, pokeLitwick,]
+var pokemonsArray = [
+  pokeDitto, pokeEspeon, pokeLitwick, pokeDragonair, pokeCharizard, pokeLampent
+]
+
+
+var pokemonEncontrado = {
+  // MAYUSCULAS
+
+  Ditto : pokemonsArray[0],
+  Espeon : pokemonsArray[1],
+  Litwick : pokemonsArray[2],
+  Dragonair : pokemonsArray[3],
+  Charizard : pokemonsArray[4],
+  Lampent : pokemonsArray[5],
+
+
+
+  // MINUSCULAS
+  ditto : pokemonsArray[0],
+  espeon : pokemonsArray[1],
+  litwick : pokemonsArray[2],
+  dragonair : pokemonsArray[3],
+  charizard : pokemonsArray[4],
+  lampent : pokemonsArray[5]
+}
+
+
+console.log(Ditto, Espeon, Litwick, Dragonair, Charizard, Lampent);
+
+
+
+
+
+
+(async function load() {
+
+
+
+    async function getData (url) {
+     const response = await fetch(url)
+     const data = await response.json()
+     return data;
+    }
+    
+    const ditto = await getData('https://pokeapi.co/api/v2/pokemon/ditto/')
+    const litwick = await getData('https://pokeapi.co/api/v2/pokemon/litwick/')
+    const espeon = await getData('https://pokeapi.co/api/v2/pokemon/espeon/')
+    const dragonair = await getData('https://pokeapi.co/api/v2/pokemon/dragonair/')
+    const charizard = await getData('https://pokeapi.co/api/v2/pokemon/charizard/')
+    const lampent = await getData('https://pokeapi.co/api/v2/pokemon/lampent/')
+
+
+
+// animación
+
+function animacion(idAnimar) {
+
+const animarSeccion = document.getElementById(idAnimar)
+
+animarSeccion.classList.add('fadeIn')
+
+}
+
+
+// Información de pokemons
 
 
 
@@ -178,15 +141,6 @@ var pokemonsArray = [pokeDitto, pokeEspeon, pokeLitwick,]
       }
 
 
-
-
-
-
-
-
-
-
-
 // Información sobre pokemon y habilidades 
 
 
@@ -208,39 +162,8 @@ var pokemonsArray = [pokeDitto, pokeEspeon, pokeLitwick,]
         </div>
         </div>
         `
-        //  <form>           
-        //     <input class="btn" id="${pokemon.numeroDeModal}6" type="button" value="Cerrar">
-        // </form>
       )
     }
-
-// Crear nueva seccion para nuevo pokemon
-
-      // function seccionPokemon(numeroPokemon, stringNombrePokemon, idNumeroPokemon) {
-      //   return(
-      //     `<div class=" ${numeroPokemon} seccionPokemon" style="text-align: center; color: #12223d; width: 80%; margin: 0 auto;">
-      //     <h2 style="padding: 20px 0; box-shadow: 1px 1px 1px 1px #DADADA;">Habilidades de ${stringNombrePokemon}</h2>
-      //     <img class="cargando" src="Assets/imagenes/cargando-loading-048.gif">
-      //     <div class="seccionClick" style="display: flex; justify-content: space-evenly;" id="${idNumeroPokemon}">
-              
-      //     </div>
-      // </div>`
-      //   )
-      // }
-
-      // function crearSeccionPokemon (pokemon, habilidadesPokemon) {
-      //   document.querySelector(".cargando").remove();
-      //   pokemon.abilities.forEach((item) => {
-      //     const HTMLString = seccionPokemon(item)
-      //     const html = document.implementation.createHTMLDocument();
-      //     html.body.innerHTML = HTMLString;
-      //     $(habilidadesPokemon).append(html.body.children[0])
-      //   })
-      // }
-
-
-
-
 
 // Buscador
 const $espacio = document.querySelector('#itemEncontrado')
@@ -263,12 +186,14 @@ function setAttributes($element, atributos) {
     // })
     $espacio.append($loader);
 
-    // const data = new FormData($buscador)
-    // const busqueda = console.log(data.get('name'))
-    // const HTMLString = detallePokemon(JSON.parse(busqueda))
-    const HTMLString = detallePokemon(pokeLitwick)
-    $espacio.innerHTML = HTMLString
-    
+    $buscar = document.getElementById('buscar')
+
+    const data = new FormData($buscar)
+    const pokemon = data.get('name')
+
+    const HTMLString = detallePokemon(pokemonEncontrado[pokemon])
+    $espacio.innerHTML = HTMLString  
+
   })
   
 // Evento de click
@@ -320,53 +245,6 @@ function addEventClick(IDDiv) {
         })
       }
 
-
-
-
-
-
-
-
-
-// Creación de detalle de pokemons
-
-      // function descPokemons(nombreDePokemon, imagenDePokemon, descPokemon) {
-      //   (item) => {
-      //     let elemento = document.querySelector('insertarScript')
-      //     let pokemon = nombreDePokemon;
-      //     const HTMLString = detallePokemon(item);
-      //     const html = document.implementation.createHTMLDocument();
-      //     html.body.innerHTML = HTMLString;
-      //     $(elemento).append(html.body.children[0])
-      //   }
-      // }
-      
-      // const descLampent = "608 Lampent es un Pokémon de tipo fantasma/fuego introducido en la quinta generación. Es la evolución de Litwick."
-
-      // descPokemons(lampent, 'Assets/imagenes/lampent.png', descLampent)
-      // debugger
-        
-// Lista de habilidades de Ditto 
-
-      // let habilidadesDitto = document.querySelector('#habilidades1')
-
-      // ditto.abilities.forEach((item) => {
-      //   const HTMLString = itemTemplate(item)
-      //   const html = document.implementation.createHTMLDocument();
-      //   html.body.innerHTML = HTMLString;
-      //   $(habilidadesDitto).append(html.body.children[0])
-      //   console.log(HTMLString)
-      //   console.log(html)
-        
-      // })
-
-
-
-
-
-
-
-
 // Habilidades Ditto
 
       let habilidadesDitto = document.querySelector('#habilidades1')
@@ -410,11 +288,6 @@ crearSeccion(lampent, habilidadesLampent, 'habilidades6', 'sextoPokemon', 'Lampe
     console.log('litwick: ', litwick)
     console.log('Espeon: ', espeon)
     console.log('Dragonair: ', dragonair)
-    
-    // function eliminarCarga() {
-    //     document.querySelector(".cargando").remove();
-    // }
-    // eliminarCarga()
 
 })()
 
