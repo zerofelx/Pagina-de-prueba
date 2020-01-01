@@ -1,2 +1,2 @@
 # Pagina-de-prueba
-Prueba para mostrarle a mi profe de tecnología ja ja salu2
+Este repositorio fue hecho para aprender el uso de JavaScript y por otro lado entender un poco el uso de Github.
